@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Renk Teması */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #FFD700;
+    --bg-dark: #333;
+    --text-light: white;
+}
+
+/* Tam Ekran Başlık */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #4A90E2, #66B3FF);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0.5em 0;
+    color: var(--secondary-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 0.5em 0;
+    color: var(--text-light);
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Hakkımda */
+#about, #skills, #certifications, #experience, #contact {
+    padding: 4em 0;
+    text-align: center;
+    background: white;
+}
+
+#about h2, #skills h2, #certifications h2, #experience h2, #contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+    color: var(--primary-color);
+}
+
+/* Beceriler */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: var(--primary-color);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, background-color 0.3s;
+    width: 200px;
+    margin: 10px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    background-color: var(--secondary-color);
+}
+
+/* Deneyimler */
+#experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+/* İletişim */
+#contact p {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+#contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    padding: 1em 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Genelde gövde yapısı ve renklerin ayarlanması */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Başlık kısmı */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Başlıktaki link */
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header a:hover {
+    color: #ffd700;
+}
+
+/* Deneyim listesi */
+#experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#experience li {
+    background-color: #e0e0e0;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#experience li:hover {
+    background-color: #d4edda;
+    transform: translateY(-5px);
+}
+
+/* Alt kısım */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Genel düzenleme */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero bölümü */
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Profil fotoğrafı */
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid white;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Hover efekti */
+.profile-photo:hover {
+    transform: scale(1.1) rotate(5deg); /* Fotoğraf üzerine gelindiğinde büyütme ve hafif döndürme */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+}
+
+/* Sosyal linkler */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #666;
+}
+/* Eğitim Bilgileri Bölümü */
+#education {
+    background-color: #f0f4f3; /* Hafif gri arka plan */
+    padding: 30px 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık Stili */
+#education h2 {
+    color: #4CAF50; /* Başlık rengi (sayfa rengine uyumlu) */
+    margin-bottom: 20px;
+}
+
+/* Eğitim İçeriği */
+.education-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Üniversite Logosu */
+.university-logo {
+    width: 80px; /* Logonun genişliği */
+    height: auto;
+    border-radius: 50%; /* Logoyu yuvarlak yapmak için */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.university-logo:hover {
+    transform: scale(1.1); /* Logoya hover efekti */
+}
+
+/* Eğitim Detayları */
+.education-details p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
